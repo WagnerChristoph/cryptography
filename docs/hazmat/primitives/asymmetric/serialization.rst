@@ -525,6 +525,9 @@ An example ECDSA key in OpenSSH format::
         if the key is not in the proper format or the incorrect password
         was provided.
 
+    :raises TypeError: If a ``password`` was given and the private key was
+        not encrypted.    
+
     :raises cryptography.exceptions.UnsupportedAlgorithm: If the serialized
         key is of a type that is not supported.
 
